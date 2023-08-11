@@ -11,7 +11,7 @@ int main()
 {
 	sf::ContextSettings settings;
 	settings.antialiasingLevel = 8;
-	std::unique_ptr<sf::RenderWindow> upWnd = std::make_unique<sf::RenderWindow>(sf::VideoMode(1280U, 720U, 32U), "Template", sf::Style::None, settings);
+	std::unique_ptr<sf::RenderWindow> upWnd = std::make_unique<sf::RenderWindow>(sf::VideoMode(1280U, 720U, 32U), "Template", sf::Style::Close, settings);
 
 
 	upWnd->setKeyRepeatEnabled(true);
